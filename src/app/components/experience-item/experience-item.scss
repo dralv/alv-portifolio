@@ -1,0 +1,36 @@
+.experience-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--text-secondary);
+  .experience-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    @media (min-width:768px){
+      flex-direction: row;
+      justify-content: space-between;
+    }
+   
+  }
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: justify;
+  #empresa{
+    font-style: italic;
+  }
+  ul{
+    margin-top:24px;
+  }
+  @media (min-width:768px){
+    align-items: start;
+    justify-content: flex-start;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: justify;
+  }
+}

@@ -1,29 +1,23 @@
 import { Experience } from "./components/experience/experience";
 import { Header } from "./components/header/header";
+import { EmailIcon } from "./components/icons/email-icon";
+import { Information } from "./components/information/information";
+import { SocialBtns } from "./components/social-btns/social-btns";
 import "./styles/home.scss"
+import Image from 'next/image'
+
 export default function Home() {
   return (
     <main className="container">
       <Header/>
+      <Information/>
       <Experience/>
-        <div className="infos">
-          <h3>Languages</h3>
-          <div className="languages-info">
-            <span>Inglês - B2</span>
-            <span>Português - Nativo</span>
-          </div>
-          <h3>Educação</h3>
-          <div className="education-info">
-            <span>🎓</span>
-            <span>Técnologo em Gestão da Tecnologia da Informação - Unifavip Wyden</span>
-            <span>👨🏻‍💻</span>
-            <span>Bacharelado em Engenharia de Software - Estácio</span>
-          </div>
-          <span></span>
-        </div>
         <div className="buttons">
-          <div className="social"></div>
-          <button>Entre em contato</button>
+          <SocialBtns/>
+          <a className="btn-primary" href="mailto:alvarotaraujo@gmail.com">
+            Entre em contato
+            <EmailIcon/>
+          </a>
         </div>
    
     </main>
